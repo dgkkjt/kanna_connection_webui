@@ -17,7 +17,7 @@ export default defineConfig(() => {
       strictPort: true,
       proxy: {
         '/kanna_connection/api': {
-          target: 'http://127.0.0.1:12139',
+          target: 'http://127.0.0.1:49173',
           changeOrigin: true,
           rewrite: (path) => path.replace(/^\/kanna_connection\/api/, '')
         }
